@@ -1,0 +1,8 @@
+{
+  "name": "PipSqueak — Local Business Directory",
+  "description": "Local-business discovery and advertising directory with permanent profiles, QR codes, and quarterly listing management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

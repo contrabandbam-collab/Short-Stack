@@ -1,0 +1,1413 @@
+{
+  "categories": [
+    {
+      "id": "restaurants-food",
+      "name": "Restaurants / Food",
+      "description": "Local eateries, artisan bistros, bakeries, cafes, and catering.",
+      "suggestedKeywords": [
+        "cuisine type",
+        "catering",
+        "takeout",
+        "bakery",
+        "food truck",
+        "fresh pasta",
+        "wood-fired pizza",
+        "farm-to-table",
+        "espresso",
+        "craft cocktails"
+      ],
+      "requiresMenu": true,
+      "categoryFields": [
+        {
+          "id": "cuisine",
+          "label": "Cuisine Style",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "dietary",
+          "label": "Dietary Accommodations",
+          "type": "text"
+        },
+        {
+          "id": "outdoorSeating",
+          "label": "Outdoor Patio",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "automotive",
+      "name": "Automotive",
+      "description": "Certified repair bays, oil changes, tire replacement, and detailing.",
+      "suggestedKeywords": [
+        "mechanic",
+        "oil change",
+        "tire service",
+        "detailing",
+        "brake repair",
+        "transmission",
+        "diagnostics",
+        "wheel alignment",
+        "engine tuneup"
+      ],
+      "requiresMenu": false,
+      "categoryFields": [
+        {
+          "id": "certifications",
+          "label": "ASE / Factory Certifications",
+          "type": "text"
+        },
+        {
+          "id": "shuttleService",
+          "label": "Customer Courtesy Shuttle",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "home-services",
+      "name": "Home Repair / Home Services",
+      "description": "Licensed contracting, painting, plumbing, carpentry, and handyman services.",
+      "suggestedKeywords": [
+        "painting",
+        "appliance installation",
+        "handyman",
+        "home repairs",
+        "carpentry",
+        "plumbing",
+        "electrical",
+        "roof inspection",
+        "drywall"
+      ],
+      "requiresMenu": false,
+      "categoryFields": [
+        {
+          "id": "licenseNumber",
+          "label": "Contractor License #",
+          "type": "text"
+        },
+        {
+          "id": "insured",
+          "label": "Bonded & Insured",
+          "type": "boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "pet-services",
+      "name": "Pet Services",
+      "description": "Professional dog grooming, pet sitting, walking, and wellness care.",
+      "suggestedKeywords": [
+        "pet sitting",
+        "pet grooming",
+        "dog walking",
+        "cat sitting",
+        "puppy training",
+        "pet boarding",
+        "flea baths",
+        "nail trimming"
+      ],
+      "requiresMenu": false,
+      "categoryFields": [
+        {
+          "id": "speciesServed",
+          "label": "Species Accepted",
+          "type": "text"
+        },
+        {
+          "id": "cprCertified",
+          "label": "Pet First Aid / CPR Certified",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "id": "beauty-barber-salon",
+      "name": "Beauty / Barber / Salon",
+      "description": "Independent barber shops, hair stylists, nail studios, and estheticians.",
+      "subcategories": [
+        "Barber Shop",
+        "Hair Salon",
+        "Braiding & Natural Hair",
+        "Nail Studio",
+        "Esthetics & Facials",
+        "Lash & Brow"
+      ],
+      "suggestedKeywords": [
+        "barber",
+        "haircut",
+        "braiding",
+        "fade",
+        "balayage",
+        "manicure",
+        "facial",
+        "lashes",
+        "skincare"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "cleaning-services",
+      "name": "Cleaning Services",
+      "description": "Residential home cleaning, deep cleaning, move-out cleans, and commercial janitorial.",
+      "subcategories": [
+        "Residential Home Cleaning",
+        "Deep Clean & Move-Out",
+        "Commercial Janitorial",
+        "Carpet & Upholstery",
+        "Window Washing"
+      ],
+      "suggestedKeywords": [
+        "house cleaning",
+        "deep clean",
+        "maid service",
+        "move out cleaning",
+        "carpet cleaning",
+        "window washing",
+        "eco cleaning"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "childcare",
+      "name": "Childcare",
+      "description": "Licensed home daycares, after-school care, preschools, and trusted family babysitters.",
+      "subcategories": [
+        "Licensed Family Daycare",
+        "In-Home Childcare",
+        "After-School Program",
+        "Babysitting & Nanny",
+        "Preschool"
+      ],
+      "suggestedKeywords": [
+        "childcare",
+        "daycare",
+        "infant care",
+        "toddler care",
+        "after school",
+        "nanny",
+        "babysitter",
+        "early learning"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "senior-services",
+      "name": "Senior Services",
+      "description": "Non-medical companion care, senior errand assistance, and home accessibility support.",
+      "subcategories": [
+        "Companion Care",
+        "Senior Transportation",
+        "Errand & Meal Support",
+        "Home Safety Modifications",
+        "Respite Care"
+      ],
+      "suggestedKeywords": [
+        "senior care",
+        "companion",
+        "elderly assistance",
+        "errand helper",
+        "respite care",
+        "senior transport"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "landscaping-lawn-care",
+      "name": "Landscaping / Lawn Care",
+      "description": "Yard maintenance, mowing, seasonal cleanups, hedge trimming, and garden design.",
+      "subcategories": [
+        "Lawn Mowing & Edging",
+        "Seasonal Yard Cleanup",
+        "Hedge & Shrub Trimming",
+        "Garden Bed Maintenance",
+        "Irrigation & Drainage"
+      ],
+      "suggestedKeywords": [
+        "lawn care",
+        "lawn mowing",
+        "landscaping",
+        "yard cleanup",
+        "hedge trimming",
+        "aeration",
+        "mulching",
+        "leaf removal"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "moving-services",
+      "name": "Moving Services",
+      "description": "Local neighborhood moving crews, furniture delivery, and packing assistance.",
+      "subcategories": [
+        "Local Residential Moving",
+        "Furniture Delivery",
+        "Loading & Unloading",
+        "Packing & Supplies",
+        "Junk Removal & Hauling"
+      ],
+      "suggestedKeywords": [
+        "movers",
+        "local moving",
+        "moving truck",
+        "furniture delivery",
+        "junk removal",
+        "hauling",
+        "packing help"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation",
+      "description": "Airport shuttles, private drivers, non-emergency transport, and group charters.",
+      "subcategories": [
+        "Airport Shuttle",
+        "Private Chauffeur",
+        "Courier Transport",
+        "Senior Transportation",
+        "Charter Van"
+      ],
+      "suggestedKeywords": [
+        "airport ride",
+        "private driver",
+        "shuttle service",
+        "transportation",
+        "chauffeur",
+        "car service"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "photography-video",
+      "name": "Photography / Video",
+      "description": "Portrait photography, event videography, family sessions, and commercial branding shoots.",
+      "subcategories": [
+        "Family & Portrait",
+        "Weddings & Celebrations",
+        "Commercial & Product",
+        "Real Estate Photography",
+        "Drone & Aerial Video"
+      ],
+      "suggestedKeywords": [
+        "photographer",
+        "family photos",
+        "headshots",
+        "wedding photographer",
+        "videography",
+        "drone photo",
+        "portraits"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "event-services",
+      "name": "Event Services",
+      "description": "Party rentals, DJs, floral styling, event coordinators, and celebration decor.",
+      "subcategories": [
+        "Party Rentals & Tents",
+        "DJ & Audio Engineering",
+        "Floral Styling",
+        "Event Planning & Coordination",
+        "Balloon & Backdrop Decor"
+      ],
+      "suggestedKeywords": [
+        "event planner",
+        "dj",
+        "party rentals",
+        "florist",
+        "event lighting",
+        "photo booth",
+        "decorations"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "catering",
+      "name": "Catering",
+      "description": "Artisan off-site catering, private chefs, buffet trays, and celebration cuisine.",
+      "subcategories": [
+        "Corporate Catering",
+        "Private Dinner Chef",
+        "Wedding & Event Catering",
+        "Party Trays & Platters",
+        "Mobile Food Cart"
+      ],
+      "suggestedKeywords": [
+        "catering",
+        "private chef",
+        "party platters",
+        "corporate lunch",
+        "event catering",
+        "barbecue catering",
+        "appetizers"
+      ],
+      "requiresMenu": true
+    },
+    {
+      "id": "clothing-fashion",
+      "name": "Clothing / Fashion",
+      "description": "Independent boutiques, tailoring & alterations, custom embroidery, and vintage apparel.",
+      "subcategories": [
+        "Boutique Clothing",
+        "Tailoring & Alterations",
+        "Custom Apparel & Printing",
+        "Vintage & Consignment",
+        "Handmade Knitwear"
+      ],
+      "suggestedKeywords": [
+        "boutique",
+        "alterations",
+        "tailor",
+        "custom t-shirts",
+        "vintage clothing",
+        "embroidery",
+        "fashion design"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "retail-specialty-shops",
+      "name": "Retail / Specialty Shops",
+      "description": "Neighborhood brick-and-mortar storefronts, independent bookshops, gifts, and specialty goods.",
+      "subcategories": [
+        "Books & Stationery",
+        "Gifts & Home Goods",
+        "Specialty Grocery",
+        "Plants & Nursery",
+        "Craft & Hobby Supplies"
+      ],
+      "suggestedKeywords": [
+        "local shop",
+        "gifts",
+        "bookstore",
+        "plants",
+        "artisan goods",
+        "specialty foods",
+        "boutique retail"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "professional-services",
+      "name": "Professional Services",
+      "description": "Notary publics, legal document preparation, translation, architecture, and business operations.",
+      "subcategories": [
+        "Mobile Notary Public",
+        "Document Preparation",
+        "Translation & Interpretation",
+        "Drafting & Architecture",
+        "Human Resources"
+      ],
+      "suggestedKeywords": [
+        "notary",
+        "mobile notary",
+        "document prep",
+        "translator",
+        "certified translation",
+        "drafting",
+        "compliance"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "tax-bookkeeping",
+      "name": "Tax / Bookkeeping",
+      "description": "Individual tax preparation, small business bookkeeping, payroll, and financial filings.",
+      "subcategories": [
+        "Individual Tax Return",
+        "Small Business Bookkeeping",
+        "Payroll Management",
+        "QuickBooks Specialist",
+        "IRS Audit Support"
+      ],
+      "suggestedKeywords": [
+        "tax preparation",
+        "bookkeeping",
+        "accountant",
+        "payroll",
+        "small business taxes",
+        "quickbooks",
+        "tax filing"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "consulting",
+      "name": "Consulting",
+      "description": "Strategic advisory, marketing consultants, workflow automation, and career advisors.",
+      "subcategories": [
+        "Small Business Advisory",
+        "Marketing & Social Media",
+        "IT & Systems Strategy",
+        "Career Coaching",
+        "Operations Consulting"
+      ],
+      "suggestedKeywords": [
+        "consultant",
+        "business coach",
+        "marketing strategy",
+        "social media",
+        "workflow",
+        "operations advisor"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "technology-computer-repair",
+      "name": "Technology / Computer Repair",
+      "description": "Computer diagnostics, laptop screen replacement, smartphone repair, and home Wi-Fi setup.",
+      "subcategories": [
+        "PC & Mac Diagnostics",
+        "Screen & Battery Repair",
+        "Data Recovery",
+        "Home & Office Wi-Fi Setup",
+        "Custom PC Building"
+      ],
+      "suggestedKeywords": [
+        "computer repair",
+        "phone repair",
+        "mac repair",
+        "data recovery",
+        "wifi setup",
+        "laptop screen",
+        "virus removal"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "mobile-services",
+      "name": "Mobile Services",
+      "description": "On-demand mobile services that travel directly to client homes and workplaces.",
+      "subcategories": [
+        "Mobile Detailing",
+        "Mobile Locksmith",
+        "Mobile Notary",
+        "Mobile Knife Sharpening",
+        "Mobile Tire Installation"
+      ],
+      "suggestedKeywords": [
+        "mobile service",
+        "we come to you",
+        "mobile mechanic",
+        "mobile locksmith",
+        "mobile detailing",
+        "on site service"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "fitness-personal-training",
+      "name": "Fitness / Personal Training",
+      "description": "Certified personal trainers, yoga instructors, martial arts, and boutique fitness studios.",
+      "subcategories": [
+        "One-on-One Personal Training",
+        "Yoga & Pilates",
+        "Martial Arts & Self-Defense",
+        "Strength Conditioning",
+        "Outdoor Bootcamps"
+      ],
+      "suggestedKeywords": [
+        "personal trainer",
+        "fitness coach",
+        "yoga",
+        "pilates",
+        "strength training",
+        "workout",
+        "boxing"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "tutoring-education",
+      "name": "Tutoring / Education",
+      "description": "K-12 academic tutors, test prep mentors, private music instructors, and language tutors.",
+      "subcategories": [
+        "K-12 Math & Science",
+        "Music Lessons (Piano, Guitar)",
+        "Language Instruction",
+        "SAT/ACT Test Prep",
+        "Reading & Writing Coach"
+      ],
+      "suggestedKeywords": [
+        "tutoring",
+        "math tutor",
+        "piano lessons",
+        "guitar lessons",
+        "spanish lessons",
+        "test prep",
+        "reading coach"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "arts-crafts",
+      "name": "Arts / Crafts",
+      "description": "Local artisans, custom ceramicists, woodturners, custom framers, and stained glass craftspeople.",
+      "subcategories": [
+        "Ceramics & Pottery",
+        "Custom Framing",
+        "Woodworking & Furniture",
+        "Stained Glass",
+        "Printmaking & Letterpress"
+      ],
+      "suggestedKeywords": [
+        "custom framing",
+        "pottery",
+        "woodworking",
+        "handmade gifts",
+        "ceramics",
+        "artisan craft",
+        "custom decor"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "description": "Acoustic musicians, magicians, party characters, balloon artists, and live event performers.",
+      "subcategories": [
+        "Live Acoustic Music",
+        "Party Entertainers & Characters",
+        "Magic & Illusions",
+        "Trivia & Game Hosts",
+        "Stand-Up & Emcees"
+      ],
+      "suggestedKeywords": [
+        "live music",
+        "acoustic performer",
+        "magician",
+        "party entertainment",
+        "kids party host",
+        "emcee"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "personal-services",
+      "name": "Personal Services",
+      "description": "Personal organizers, closet concierges, personal shoppers, and life transition helpers.",
+      "subcategories": [
+        "Home & Closet Organizing",
+        "Personal Shopping",
+        "Moving Concierge",
+        "Life Transition Helper",
+        "Wardrobe Stylist"
+      ],
+      "suggestedKeywords": [
+        "home organizer",
+        "decluttering",
+        "personal assistant",
+        "closet organization",
+        "personal stylist"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "delivery-courier",
+      "name": "Delivery / Courier",
+      "description": "Local document couriers, fragile package delivery, legal process service, and same-day errands.",
+      "subcategories": [
+        "Same-Day Local Courier",
+        "Legal Document Delivery",
+        "Fragile Item Transport",
+        "Specialty Floral Delivery",
+        "Medical Courier"
+      ],
+      "suggestedKeywords": [
+        "courier",
+        "delivery service",
+        "same day delivery",
+        "document courier",
+        "local messenger",
+        "errand delivery"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "construction-trades",
+      "name": "Construction / Trades",
+      "description": "Specialty trade contractors including roofing, masonry, HVAC, electrical, and concrete.",
+      "subcategories": [
+        "Roofing & Gutters",
+        "HVAC & Heat Pumps",
+        "Masonry & Concrete",
+        "Fencing & Decks",
+        "Welding & Metal Fabrication"
+      ],
+      "suggestedKeywords": [
+        "roofing",
+        "hvac",
+        "furnace repair",
+        "heat pump",
+        "concrete",
+        "fencing",
+        "deck builder",
+        "masonry"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "real-estate-services",
+      "name": "Real Estate Services",
+      "description": "Independent real estate brokers, home inspectors, appraisal specialists, and property managers.",
+      "subcategories": [
+        "Home Inspection",
+        "Property Management",
+        "Residential Brokerage",
+        "Real Estate Appraisal",
+        "Staging Services"
+      ],
+      "suggestedKeywords": [
+        "home inspector",
+        "property manager",
+        "realtor",
+        "home staging",
+        "inspection report",
+        "rental management"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "home-based-businesses",
+      "name": "Home-Based Businesses",
+      "description": "Licensed cottage kitchen bakers, artisan home makers, candle ateliers, and custom crafters.",
+      "subcategories": [
+        "Cottage Bakery & Confections",
+        "Artisan Candles & Scents",
+        "Handmade Bath & Body",
+        "Custom Embroidery",
+        "Virtual Bookkeeper"
+      ],
+      "suggestedKeywords": [
+        "cottage baker",
+        "custom cakes",
+        "artisan candles",
+        "handmade soap",
+        "home business",
+        "custom gifts"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "online-businesses",
+      "name": "Online Businesses",
+      "description": "Locally rooted e-commerce shops, digital agencies, web developers, and remote creators.",
+      "subcategories": [
+        "Local E-Commerce",
+        "Website Design & Development",
+        "Digital Marketing & SEO",
+        "Content & Copywriting",
+        "Graphic Design"
+      ],
+      "suggestedKeywords": [
+        "web design",
+        "online store",
+        "ecommerce",
+        "seo",
+        "graphic design",
+        "digital creator",
+        "branding"
+      ],
+      "requiresMenu": false
+    },
+    {
+      "id": "other",
+      "name": "Other / Not Listed",
+      "description": "Custom, specialized, or unique independent small businesses not listed in standard categories.",
+      "subcategories": [
+        "Custom Independent Enterprise",
+        "Specialty Craft",
+        "Unique Service Provider"
+      ],
+      "suggestedKeywords": [
+        "specialty service",
+        "independent business",
+        "local specialist",
+        "custom services",
+        "artisan"
+      ],
+      "requiresMenu": false,
+      "isCustom": true
+    }
+  ],
+  "businesses": [
+    {
+      "id": "sk-2rn7bf7z",
+      "ownerId": "user-owner-1",
+      "ownerEmail": "contrabandbam@gmail.com",
+      "name": "Sound View Artisan Bakery",
+      "shortDescription": "Organic sourdough, laminated croissants, and single-origin espresso roasted locally.",
+      "category": "restaurants-food",
+      "keywords": [
+        "sourdough",
+        "bakery",
+        "croissant",
+        "espresso"
+      ],
+      "address": "2401 NW Market St",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98107",
+      "serviceArea": "",
+      "phone": "(206) 555-8291",
+      "email": "hello@soundviewbakery.local",
+      "website": "",
+      "directionsUrl": "",
+      "logoUrl": "",
+      "photos": [],
+      "menuPhotos": [
+        "/src/assets/images/seeker_restaurant_menu_1791171631325.jpg"
+      ],
+      "menuFileUrl": "",
+      "menuItems": [],
+      "services": [],
+      "hours": {
+        "monday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM",
+        "wednesday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "friday": "9:00 AM – 5:00 PM",
+        "saturday": "10:00 AM – 4:00 PM",
+        "sunday": "Closed"
+      },
+      "status": "active",
+      "staff": [
+        {
+          "id": "st-1791174271557",
+          "userId": "user-staff-1791174271557",
+          "email": "baker.alex@soundviewbakery.local",
+          "name": "Alex",
+          "permissions": [
+            "edit_menu",
+            "edit_photos"
+          ],
+          "invitedAt": "2026-10-05T04:24:31.557Z"
+        }
+      ],
+      "billing": {
+        "status": "paid",
+        "annualFee": 50,
+        "termStartDate": "2026-10-05T04:24:31.567Z",
+        "paidThroughDate": "2027-10-05T04:24:31.567Z",
+        "expirationDate": "2027-10-05T04:24:31.567Z",
+        "reminderScheduledDate": "2027-08-06T04:24:31.567Z",
+        "reminderSent": false,
+        "providerReference": "ch_renewal_soundview",
+        "receiptNumber": "REC-2026-7025",
+        "lastPaymentVerifiedAt": "2026-10-05T04:24:31.567Z",
+        "isInitialSignUpPaid": true,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "createdAt": "2026-10-05T04:24:31.528Z",
+      "updatedAt": "2026-10-05T04:24:31.567Z",
+      "flyer": {
+        "id": "fl-1791174271553",
+        "businessId": "sk-2rn7bf7z",
+        "headline": "Free Loaf with $20 Morning Pastry Purchase",
+        "offerDetails": "Show your Short Stack profile QR code at checkout. Valid Tuesday through Friday.",
+        "photoUrl": "",
+        "accentColor": "#d97706",
+        "template": "craft",
+        "status": "published",
+        "updatedAt": "2026-10-05T04:24:31.553Z"
+      },
+      "averageRating": null,
+      "ratingCount": 0
+    },
+    {
+      "id": "sk-wcbrh49p",
+      "ownerId": "user-1791173181164",
+      "ownerEmail": "taylor@localbistro.com",
+      "name": "Taylor Bakery",
+      "shortDescription": "",
+      "category": "restaurants-food",
+      "keywords": [],
+      "address": "",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "",
+      "serviceArea": "",
+      "phone": "",
+      "email": "taylor@localbistro.com",
+      "website": "",
+      "directionsUrl": "",
+      "logoUrl": "",
+      "photos": [],
+      "menuPhotos": [],
+      "menuFileUrl": "",
+      "menuItems": [],
+      "services": [],
+      "hours": {
+        "monday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM",
+        "wednesday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "friday": "9:00 AM – 5:00 PM",
+        "saturday": "10:00 AM – 4:00 PM",
+        "sunday": "Closed"
+      },
+      "status": "draft",
+      "staff": [],
+      "billing": {
+        "status": "unpaid",
+        "annualFee": 50,
+        "reminderSent": false,
+        "isInitialSignUpPaid": false,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "createdAt": "2026-10-05T04:06:23.727Z",
+      "updatedAt": "2026-10-05T04:06:23.727Z",
+      "averageRating": null,
+      "ratingCount": 0
+    },
+    {
+      "id": "sk-8a1f49b2",
+      "ownerId": "user-owner-1",
+      "ownerEmail": "contrabandbam@gmail.com",
+      "name": "Laurel & Olive Osteria",
+      "shortDescription": "Seasonal Mediterranean scratch kitchen celebrating wood-fired sourdough, handmade pastas, and regional olive oils.",
+      "category": "restaurants-food",
+      "keywords": [
+        "cuisine type",
+        "fresh pasta",
+        "wood-fired pizza",
+        "farm-to-table",
+        "catering"
+      ],
+      "address": "428 Mill Creek Way",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98101",
+      "serviceArea": "Downtown, Capitol Hill, Queen Anne",
+      "phone": "(206) 555-0142",
+      "email": "hello@laurelandolive.local",
+      "website": "https://laurelandolive.local",
+      "directionsUrl": "https://maps.google.com/?q=428+Mill+Creek+Way+Seattle+WA",
+      "photos": [
+        "/src/assets/images/seeker_restaurant_bistro_1791171557687.jpg"
+      ],
+      "menuPhotos": [
+        "/src/assets/images/seeker_restaurant_menu_1791171631325.jpg"
+      ],
+      "menuItems": [
+        {
+          "id": "m1",
+          "name": "Hand-Rolled Tagliatelle Tartufata",
+          "description": "Cultured butter, cracked black peppercorn, shaved summer truffle",
+          "price": "$26.00",
+          "category": "Handmade Pasta"
+        },
+        {
+          "id": "m2",
+          "name": "Wood-Fired Margherita D.O.P.",
+          "description": "San Marzano tomatoes, fior di latte, fresh basil, cold-pressed olive oil",
+          "price": "$19.00",
+          "category": "Wood Fired"
+        },
+        {
+          "id": "m3",
+          "name": "Crispy Artichoke Fritti",
+          "description": "Meyer lemon aioli, mint, toasted sea salt",
+          "price": "$14.00",
+          "category": "Starters"
+        },
+        {
+          "id": "m4",
+          "name": "Olive Oil Citrus Polenta Cake",
+          "description": "Whipped mascarpone, rosemary berry reduction",
+          "price": "$11.00",
+          "category": "Dessert"
+        }
+      ],
+      "services": [
+        {
+          "id": "s1",
+          "name": "Private Dining & Celebrations",
+          "description": "Mezzanine dining room accommodating up to 28 guests",
+          "price": "Inquire for quote"
+        },
+        {
+          "id": "s2",
+          "name": "Off-Site Artisan Catering",
+          "description": "Wood-fired mobile oven setup for private estate gatherings",
+          "price": "Custom package"
+        }
+      ],
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "4:00 PM – 10:00 PM",
+        "wednesday": "4:00 PM – 10:00 PM",
+        "thursday": "4:00 PM – 10:00 PM",
+        "friday": "4:00 PM – 11:00 PM",
+        "saturday": "11:00 AM – 11:00 PM",
+        "sunday": "11:00 AM – 9:00 PM"
+      },
+      "status": "active",
+      "staff": [
+        {
+          "id": "st-1",
+          "userId": "user-staff-1",
+          "email": "sarah.staff@bistro.local",
+          "name": "Sarah Chen",
+          "permissions": [
+            "edit_profile",
+            "edit_menu",
+            "edit_photos"
+          ],
+          "invitedAt": "2026-02-15T14:30:00Z"
+        }
+      ],
+      "billing": {
+        "status": "paid",
+        "annualFee": 50,
+        "termStartDate": "2026-10-05T03:44:17.759Z",
+        "paidThroughDate": "2027-10-05T03:44:17.759Z",
+        "expirationDate": "2027-10-05T03:44:17.759Z",
+        "reminderScheduledDate": "2027-08-06T03:44:17.759Z",
+        "reminderSent": false,
+        "providerReference": "ch_sim_3n78k94Lp0Qx",
+        "receiptNumber": "REC-2026-0042",
+        "lastPaymentVerifiedAt": "2026-10-05T03:44:17.759Z",
+        "isInitialSignUpPaid": true,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "flyer": {
+        "id": "fl-laurel-1",
+        "businessId": "sk-8a1f49b2",
+        "headline": "Complimentary Antipasto with Two Entrees",
+        "offerDetails": "Present this Short Stack profile card during dinner service Tuesday through Thursday. Valid through this month.",
+        "photoUrl": "/src/assets/images/seeker_restaurant_bistro_1791171557687.jpg",
+        "accentColor": "#16a34a",
+        "template": "modern",
+        "status": "published",
+        "updatedAt": "2026-02-10T12:00:00Z"
+      },
+      "createdAt": "2026-01-10T10:00:00Z",
+      "updatedAt": "2026-10-05T03:44:17.759Z",
+      "averageRating": null,
+      "ratingCount": 0
+    },
+    {
+      "id": "sk-5d9c22e4",
+      "ownerId": "user-owner-1",
+      "ownerEmail": "contrabandbam@gmail.com",
+      "name": "Precision Apex Auto Works",
+      "shortDescription": "Full-service diagnostic and mechanical repair facility specializing in domestic & European vehicles, brakes, and diagnostics.",
+      "category": "automotive",
+      "keywords": [
+        "mechanic",
+        "oil change",
+        "brake repair",
+        "tire service",
+        "diagnostics"
+      ],
+      "address": "1108 Industrial Parkway Suite B",
+      "city": "Bellevue",
+      "state": "WA",
+      "zipCode": "98004",
+      "serviceArea": "Bellevue, Redmond, Kirkland, Issaquah",
+      "phone": "(425) 555-0899",
+      "email": "service@precisionapex.local",
+      "website": "https://precisionapex.local",
+      "directionsUrl": "https://maps.google.com/?q=1108+Industrial+Parkway+Bellevue+WA",
+      "photos": [
+        "/src/assets/images/seeker_automotive_garage_1791171572958.jpg"
+      ],
+      "menuPhotos": [],
+      "menuItems": [],
+      "services": [
+        {
+          "id": "as1",
+          "name": "Comprehensive 60-Point Safety & Computer Diagnostic",
+          "description": "Full OBD-II sensor sweep, battery, alternator, fluid health",
+          "price": "$89.00"
+        },
+        {
+          "id": "as2",
+          "name": "Synthetic Oil & Filter Service",
+          "description": "Up to 5 quarts OEM spec synthetic oil, new filter, chassis lube",
+          "price": "$79.95"
+        },
+        {
+          "id": "as3",
+          "name": "Ceramic Brake Pad & Rotor Replacement",
+          "description": "Front or rear axle, hardware replacement, caliper lubrication",
+          "price": "$285.00"
+        },
+        {
+          "id": "as4",
+          "name": "Four-Wheel Precision Laser Alignment",
+          "description": "Restore factory geometry to prevent tire wear",
+          "price": "$120.00"
+        }
+      ],
+      "hours": {
+        "monday": "7:30 AM – 6:00 PM",
+        "tuesday": "7:30 AM – 6:00 PM",
+        "wednesday": "7:30 AM – 6:00 PM",
+        "thursday": "7:30 AM – 6:00 PM",
+        "friday": "7:30 AM – 6:00 PM",
+        "saturday": "8:00 AM – 2:00 PM",
+        "sunday": "Closed"
+      },
+      "status": "active",
+      "staff": [],
+      "billing": {
+        "status": "paid",
+        "annualFee": 50,
+        "termStartDate": "2026-10-05T03:44:17.759Z",
+        "paidThroughDate": "2027-10-05T03:44:17.759Z",
+        "expirationDate": "2027-10-05T03:44:17.759Z",
+        "reminderScheduledDate": "2027-08-06T03:44:17.759Z",
+        "reminderSent": false,
+        "providerReference": "ch_sim_9k2m88vBt4Nx",
+        "receiptNumber": "REC-2026-0043",
+        "lastPaymentVerifiedAt": "2026-10-05T03:44:17.759Z",
+        "isInitialSignUpPaid": true,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "flyer": {
+        "id": "fl-apex-1",
+        "businessId": "sk-5d9c22e4",
+        "headline": "$25 Off Seasonal Brake & Fluid Package",
+        "offerDetails": "Show this digital Short Stack listing flyer when dropping off your vehicle. One per customer.",
+        "photoUrl": "/src/assets/images/seeker_automotive_garage_1791171572958.jpg",
+        "accentColor": "#2563eb",
+        "template": "bold",
+        "status": "published",
+        "updatedAt": "2026-02-12T09:00:00Z"
+      },
+      "createdAt": "2026-01-15T11:00:00Z",
+      "updatedAt": "2026-10-05T03:44:17.759Z",
+      "averageRating": null,
+      "ratingCount": 0
+    },
+    {
+      "id": "sk-3f7b88a0",
+      "ownerId": "user-owner-2",
+      "ownerEmail": "craftsman@heritagehomes.local",
+      "name": "Timber & Stone Home Craftsmen",
+      "shortDescription": "Licensed general contracting, architectural carpentry, interior painting, and reliable residential repairs.",
+      "category": "home-services",
+      "keywords": [
+        "painting",
+        "handyman",
+        "home repairs",
+        "carpentry",
+        "appliance installation"
+      ],
+      "address": "",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98103",
+      "serviceArea": "Greater Seattle, Shoreline, Edmonds",
+      "phone": "(206) 555-0371",
+      "email": "estimates@timberandstone.local",
+      "website": "https://timberandstone.local",
+      "photos": [
+        "/src/assets/images/seeker_home_craftsman_1791171582249.jpg"
+      ],
+      "menuPhotos": [],
+      "menuItems": [],
+      "services": [
+        {
+          "id": "hs1",
+          "name": "Interior & Exterior Premium Painting",
+          "description": "Wall repair, priming, two-coat low VOC finish",
+          "price": "Free on-site estimate"
+        },
+        {
+          "id": "hs2",
+          "name": "Finish Carpentry & Built-in Shelving",
+          "description": "Custom crown molding, baseboards, wainscoting",
+          "price": "$85 / hr"
+        },
+        {
+          "id": "hs3",
+          "name": "Residential Handyman Maintenance",
+          "description": "Door alignment, fixtures, drywall patch, appliance hookup",
+          "price": "$75 / hr"
+        }
+      ],
+      "hours": {
+        "monday": "8:00 AM – 5:00 PM",
+        "tuesday": "8:00 AM – 5:00 PM",
+        "wednesday": "8:00 AM – 5:00 PM",
+        "thursday": "8:00 AM – 5:00 PM",
+        "friday": "8:00 AM – 5:00 PM",
+        "saturday": "By appointment",
+        "sunday": "Closed"
+      },
+      "status": "active",
+      "staff": [],
+      "billing": {
+        "status": "paid",
+        "annualFee": 50,
+        "termStartDate": "2026-10-05T03:44:17.759Z",
+        "paidThroughDate": "2027-10-05T03:44:17.759Z",
+        "expirationDate": "2027-10-05T03:44:17.759Z",
+        "reminderScheduledDate": "2027-08-06T03:44:17.759Z",
+        "reminderSent": false,
+        "providerReference": "ch_sim_119f44yZt8Rq",
+        "receiptNumber": "REC-2026-0044",
+        "lastPaymentVerifiedAt": "2026-10-05T03:44:17.759Z",
+        "isInitialSignUpPaid": true,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "createdAt": "2026-01-20T14:00:00Z",
+      "updatedAt": "2026-10-05T03:44:17.759Z",
+      "averageRating": null,
+      "ratingCount": 0,
+      "isServiceAreaOnly": true,
+      "locationType": "service_area",
+      "businessLocationType": "Home-based",
+      "homeVisitAllowed": false,
+      "publishStreetAddress": false
+    },
+    {
+      "id": "sk-9e4a77d1",
+      "ownerId": "user-owner-3",
+      "ownerEmail": "bark@pawsandwhiskers.local",
+      "name": "Paws & Whiskers Grooming Studio",
+      "shortDescription": "Gentle, fear-free full-coat styling, soothing warm-water hydrobaths, and caring neighborhood dog walking.",
+      "category": "pet-services",
+      "keywords": [
+        "pet grooming",
+        "dog walking",
+        "pet sitting",
+        "flea baths",
+        "nail trimming"
+      ],
+      "address": "512 Northgate Way",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98125",
+      "serviceArea": "Northgate, Maple Leaf, Wedgwood, Ballard",
+      "phone": "(206) 555-0922",
+      "email": "care@pawsandwhiskers.local",
+      "website": "https://pawsandwhiskers.local",
+      "photos": [
+        "/src/assets/images/seeker_pet_grooming_1791171590899.jpg"
+      ],
+      "menuPhotos": [],
+      "menuItems": [],
+      "services": [
+        {
+          "id": "ps1",
+          "name": "Signature Hydrobath Spa & Coat Deshed",
+          "description": "Hypoallergenic shampoo, blueberry facial, ear clean, blow dry",
+          "price": "$65.00"
+        },
+        {
+          "id": "ps2",
+          "name": "Full Breed-Standard Haircut & Style",
+          "description": "Sanitary trim, pad shave, full hand-scissor styling",
+          "price": "$85.00"
+        },
+        {
+          "id": "ps3",
+          "name": "30-Minute Neighborhood Dog Walking",
+          "description": "GPS-tracked solitary or buddy walk with photo check-in",
+          "price": "$28.00"
+        },
+        {
+          "id": "ps4",
+          "name": "Pedicure & Ultrasonic Teeth Polish",
+          "description": "Nail trim & grind with plaque prevention polish",
+          "price": "$22.00"
+        }
+      ],
+      "hours": {
+        "monday": "8:30 AM – 5:30 PM",
+        "tuesday": "8:30 AM – 5:30 PM",
+        "wednesday": "8:30 AM – 5:30 PM",
+        "thursday": "8:30 AM – 5:30 PM",
+        "friday": "8:30 AM – 5:30 PM",
+        "saturday": "9:00 AM – 4:00 PM",
+        "sunday": "Closed"
+      },
+      "status": "active",
+      "staff": [],
+      "billing": {
+        "status": "paid",
+        "annualFee": 50,
+        "termStartDate": "2026-10-05T03:44:17.759Z",
+        "paidThroughDate": "2027-10-05T03:44:17.759Z",
+        "expirationDate": "2027-10-05T03:44:17.759Z",
+        "reminderScheduledDate": "2027-08-06T03:44:17.759Z",
+        "reminderSent": false,
+        "providerReference": "ch_sim_66a988tRe3Wz",
+        "receiptNumber": "REC-2026-0045",
+        "lastPaymentVerifiedAt": "2026-10-05T03:44:17.759Z",
+        "isInitialSignUpPaid": true,
+        "initialSignUpFee": 50,
+        "quarterlyFee": 25,
+        "termMonths": 3
+      },
+      "createdAt": "2026-02-01T09:00:00Z",
+      "updatedAt": "2026-10-05T03:44:17.759Z",
+      "averageRating": null,
+      "ratingCount": 0
+    }
+  ],
+  "users": [
+    {
+      "id": "user-owner-1",
+      "email": "contrabandbam@gmail.com",
+      "name": "Marcus Vance",
+      "role": "owner",
+      "createdAt": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": "user-admin-1",
+      "email": "admin@seeker.local",
+      "name": "Short Stack Administrator",
+      "role": "admin",
+      "createdAt": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": "user-staff-1",
+      "email": "sarah.staff@bistro.local",
+      "name": "Sarah Chen (Staff)",
+      "role": "staff",
+      "createdAt": "2026-02-15T14:30:00Z"
+    },
+    {
+      "id": "user-1791173181164",
+      "name": "Taylor Smith",
+      "email": "taylor@localbistro.com",
+      "role": "owner",
+      "createdAt": "2026-10-05T04:06:21.164Z"
+    }
+  ],
+  "moderationActions": [
+    {
+      "id": "mod-1",
+      "businessId": "sk-8a1f49b2",
+      "businessName": "Laurel & Olive Osteria",
+      "previousStatus": "pending_payment",
+      "newStatus": "active",
+      "reason": "Initial publication verified with menu photo and $50 annual fee paid.",
+      "actor": "System / Stripe Webhook",
+      "timestamp": "2026-01-10T10:05:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-1791174271571",
+      "businessId": "sk-2rn7bf7z",
+      "businessName": "Sound View Artisan Bakery",
+      "reporterEmail": "neighbor@local.net",
+      "reason": "Hours update needed",
+      "details": "Opens at 7:00 AM instead of 8:00 AM on Saturdays",
+      "timestamp": "2026-10-05T04:24:31.571Z",
+      "status": "resolved",
+      "resolutionNotes": "Verified with owner"
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "aud-1791248817011",
+      "timestamp": "2026-10-06T01:06:57.011Z",
+      "actor": "Administrator",
+      "action": "hide_review",
+      "targetId": "sk-8a1f49b2",
+      "details": "Admin changed review rev-1791248810848-irav status to \"hidden\". Notes: Content rule violation test. New rating: 4.5 (2 total)."
+    },
+    {
+      "id": "aud-1791248813346",
+      "timestamp": "2026-10-06T01:06:53.346Z",
+      "actor": "Customer",
+      "action": "review_flagged_for_admin",
+      "targetId": "sk-8a1f49b2",
+      "details": "Review rev-1791248810848-irav flagged for moderation by Customer: \"Test flag for admin investigation\""
+    },
+    {
+      "id": "aud-1791248810849",
+      "timestamp": "2026-10-06T01:06:50.849Z",
+      "actor": "Devon C.",
+      "action": "customer_review_submitted",
+      "targetId": "sk-8a1f49b2",
+      "details": "Submitted 5-star review for \"Laurel & Olive Osteria\". New rating: 4.7 (3 total)."
+    },
+    {
+      "id": "aud-1791174271567",
+      "timestamp": "2026-10-05T04:24:31.567Z",
+      "actor": "Marcus Vance",
+      "action": "annual_fee_payment_verified",
+      "targetId": "sk-2rn7bf7z",
+      "details": "Verified manual $50 payment for 12-month advertising term. Paid through 10/5/2027. Receipt REC-2026-7025. Stable business ID sk-2rn7bf7z preserved."
+    },
+    {
+      "id": "aud-1791174271557",
+      "timestamp": "2026-10-05T04:24:31.557Z",
+      "actor": "Marcus Vance",
+      "action": "invite_staff",
+      "targetId": "sk-2rn7bf7z",
+      "details": "Invited staff baker.alex@soundviewbakery.local with permissions: edit_menu, edit_photos"
+    },
+    {
+      "id": "aud-1791174271553",
+      "timestamp": "2026-10-05T04:24:31.553Z",
+      "actor": "Marcus Vance",
+      "action": "publish_flyer",
+      "targetId": "sk-2rn7bf7z",
+      "details": "Published promotional flyer for \"Sound View Artisan Bakery\""
+    },
+    {
+      "id": "aud-1791174271542",
+      "timestamp": "2026-10-05T04:24:31.541Z",
+      "actor": "Marcus Vance",
+      "action": "annual_fee_payment_verified",
+      "targetId": "sk-2rn7bf7z",
+      "details": "Verified manual $50 payment for 12-month advertising term. Paid through 10/5/2027. Receipt REC-2026-5583. Stable business ID sk-2rn7bf7z preserved."
+    },
+    {
+      "id": "aud-1791174271529",
+      "timestamp": "2026-10-05T04:24:31.529Z",
+      "actor": "Marcus Vance",
+      "action": "create_listing_draft",
+      "targetId": "sk-2rn7bf7z",
+      "details": "Created draft listing for \"Sound View Artisan Bakery\" with permanent ID sk-2rn7bf7z"
+    },
+    {
+      "id": "aud-1791173183727",
+      "timestamp": "2026-10-05T04:06:23.727Z",
+      "actor": "Taylor Smith",
+      "action": "create_listing_draft",
+      "targetId": "sk-wcbrh49p",
+      "details": "Created draft listing for \"Taylor Bakery\" with permanent ID sk-wcbrh49p"
+    },
+    {
+      "id": "aud-1",
+      "timestamp": "2026-01-10T10:05:00Z",
+      "actor": "user-owner-1",
+      "action": "annual_fee_payment_verified",
+      "targetId": "sk-8a1f49b2",
+      "details": "Paid $50 for 12-month advertising term. Expiration set to 1 year."
+    }
+  ],
+  "reminders": [],
+  "systemSettings": {
+    "annualFee": 50,
+    "optionalAppFeeEnabled": false,
+    "optionalAppFee": 1,
+    "initialSignUpFee": 50,
+    "quarterlyFee": 25,
+    "termMonths": 3
+  },
+  "reviews": []
+}

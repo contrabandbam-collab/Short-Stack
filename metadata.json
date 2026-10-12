@@ -1,0 +1,8 @@
+{
+  "name": "Short Stack — Local Business Directory",
+  "description": "Local-business directory with permanent verified profiles, QR codes, $19.99 initial enrollment, and manual $25 renewals every two months. Small Businesses. Big Deal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
